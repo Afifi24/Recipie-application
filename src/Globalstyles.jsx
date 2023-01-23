@@ -11,7 +11,11 @@ export const Globalstyle = createGlobalStyle`
 
 }
 a{
-    color: var(--color-light);
+   color: var(--card-background);
+   transition: var(--transition);
+   &:hover{
+    color: #fff;
+   }
 }
 body{
     background-color: var(--Global-background);

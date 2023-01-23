@@ -5,7 +5,6 @@ const Recipeitem = ({recipe}) => {
   return (
     <Recipestyle>
       <h2>{recipe.recipe.label}</h2>
-      {/* <h4>{recipe.recipe.calories}</h4> */}
       <div className="image">
         <img src={recipe.recipe.image} alt="" />
       </div>
@@ -44,5 +43,11 @@ h2{
   margin-bottom: 1rem;
   font-size: 1rem;
  
+}
+/* ====MEDIA QUERIES==== */
+@media screen and (max-width:600px) {
+  &:hover{
+    transform: unset;
+  }
 }
 `

@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
-const Nav = () => {
+const Nav = ({HandelInput,search,Getsearch}) => {
   return (
     <Navstyle>
       <nav>
-      <div className="logo">EDMAM</div>
-      <div className="search">
-        <input type="text" placeholder='Search...' />
-      </div>
+      <div className="logo"><Link to='/'>EDMAM</Link></div>
+      <form onSubmit={Getsearch} className="search">
+        <input value={search} onChange={HandelInput} type="text" placeholder='Search...' />
+      </form>
       <div className="sign">
       <div className="signin"><Link to='/sign-in'>Sign In</Link></div>
       <div className="signup"><Link to='/sign-up'>Sign Up</Link></div>
@@ -62,6 +62,15 @@ nav{
 }
 .signup, .signin{
    font-weight: 600;
+   font-size: 0.8rem;
+   background-color: var(--color-secondary);
+   width: 6rem;
+   height: 2rem;
+   display: grid;
+   place-items: center;
+   border-radius: 1rem;
+   /* padding: 1rem; */
+
   
 }
 
