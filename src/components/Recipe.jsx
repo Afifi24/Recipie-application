@@ -29,7 +29,7 @@ margin: auto;
 display: grid;
 grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 gap: 2rem;
-padding: 7rem 0rem;
+padding: 12rem 0rem;
 /* =====MEDIA QUERIES===== */
 
 @media screen and (max-width:1024px) {

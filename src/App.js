@@ -6,6 +6,7 @@ import Signup from './components/SignUp'
 import Signin from './components/SignIn'
 import Nav from './components/Nav'
 import Reecipe from './components/Recipe'
+import Footer from './components/Footer'
 const App = () => {
   const[query,setQuery] = useState('fish')
   const [Recipe,setRecipes] =  useState([])
@@ -39,7 +40,7 @@ const App = () => {
           <Route exact path='/sign-in' element={<Signin/>}/>
           <Route exact path='/' element={ <Reecipe Recipe={Recipe}/>}/>
       </Routes>
-          
+          <Footer/>
     </div>
   )
 }

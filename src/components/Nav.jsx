@@ -21,7 +21,7 @@ const Nav = ({HandelInput,search,Getsearch}) => {
 export default Nav
 
 const Navstyle = styled.div`
-height: 5rem;
+min-height: 5rem;
 background-color: var(--color-blue);
 position: fixed;
 top: 0;
@@ -78,12 +78,21 @@ nav{
 
 @media screen and (max-width:800px) {
   .sign{
-    display: none;
+    gap: 0.5rem;
   }
-}
-@media screen and (max-width:600px) {
   .search{
     width: 10rem;
   }
+}
+@media screen and (max-width:600px) {
+ nav{
+  flex-direction: column;
+  gap:1rem;
+  padding-bottom: 0.8rem;
+ }
+ .signup, .signin{
+  width: 5rem;
+  gap: 1rem;
+ }
 }
 `
